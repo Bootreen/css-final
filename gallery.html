@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <title>CSS Final Exercise 🚀</title>
   </head>
-  <body>
+  <body class="gallery">
     <header>
       <nav>
         <ul>
@@ -21,7 +21,23 @@
       <h1>Image Gallery</h1>
     </header>
     <main>
-      <img src="images/laptop1.jpg" alt="image of laptop" />
+      <form class="carousel">
+        <input type="radio" name="fancy" id="s1" autofocus />
+        <input type="radio" name="fancy" id="s2" />
+        <input type="radio" name="fancy" id="s3" />
+        <input type="radio" name="fancy" id="s4" />
+        <!-- Labels have to be written inline without spaces
+        between them to support carousel/form layout.
+        Try to break closing </label> tag with
+        opening <label> tag from the next label
+        and see the difference in layout during sliding. -->
+        <label for="s1"><img src="./images/laptop1.jpg" alt="" /></label
+        ><label for="s2"><img src="./images/laptop2.jpg" alt="" /></label
+        ><label for="s3"><img src="./images/laptop3.jpg" alt="" /></label
+        ><label for="s4"><img src="./images/laptop4.jpg" alt="" /></label>
+        <div class="keys">Use ◄— and —► keys to navigate</div>
+      </form>
+      <!-- <img src="images/laptop1.jpg" alt="image of laptop" />
       <img src="images/laptop2.jpg" alt="image of laptop" />
       <img src="images/laptop3.jpg" alt="image of laptop" />
       <img src="images/laptop4.jpg" alt="image of laptop" />
@@ -29,7 +45,7 @@
       <img src="images/laptop6.jpg" alt="image of laptop" />
       <img src="images/laptop7.jpg" alt="image of laptop" />
       <img src="images/laptop8.jpg" alt="image of laptop" />
-      <img src="images/laptop9.jpg" alt="image of laptop" />
+      <img src="images/laptop9.jpg" alt="image of laptop" /> -->
     </main>
     <footer>
       <ul>
