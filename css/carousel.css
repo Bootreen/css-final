@@ -18,6 +18,8 @@
 /* Hiding radio inputs */
 .carousel input {
   position: absolute;
+  top: -1rem;
+  left: -1rem;
 }
 
 .carousel img {
