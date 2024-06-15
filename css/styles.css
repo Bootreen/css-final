@@ -125,9 +125,15 @@ footer li {
 
 .gallery,
 .specs {
-  overflow-x: hidden;
-  overflow-y: visible;
   width: 90vh;
+}
+
+.gallery {
+  overflow: hidden;
+}
+
+.specs {
+  overflow: visible;
 }
 
 .gallery header,
