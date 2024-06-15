@@ -301,6 +301,9 @@ td:last-child {
   tbody {
     font-size: 1rem;
   }
+  .cta-button {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 800px) {
