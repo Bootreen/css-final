@@ -318,4 +318,7 @@ td:last-child {
   .about {
     padding: 0 2rem;
   }
+  tbody {
+    font-size: 0.8rem;
+  }
 }
