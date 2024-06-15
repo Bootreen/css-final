@@ -119,13 +119,92 @@ footer li {
   text-align: center;
 }
 
-.gallery {
+.gallery,
+.specs {
   overflow: hidden;
   width: 90vh;
 }
 
-.gallery header {
+.gallery header,
+.specs header {
   background-color: rgba(0, 0, 0, 0.7);
   padding-bottom: 1rem;
   z-index: 11;
+}
+
+.specs header {
+  background-color: black;
+}
+
+.specs main {
+  width: 100vw;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+tr:nth-child(odd) td {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+th {
+  background-color: #712268;
+  vertical-align: middle;
+}
+
+th:first-child {
+  border-top-left-radius: 0.7rem;
+}
+
+th:last-child {
+  border-top-right-radius: 0.7rem;
+}
+
+tr {
+  height: 2.5rem;
+  vertical-align: middle;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 0.7rem;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 0.7rem;
+}
+
+td {
+  padding-left: 1rem;
+}
+
+td:first-child,
+td:last-child {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+td:last-child {
+  color: #f2c0c8;
+}
+
+.cta-button {
+  margin-top: 2rem;
+  width: 12rem;
+  height: 3.5rem;
+  background-color: #cd2a46;
+  border-radius: 0.7rem;
+  align-content: center;
+  text-align: center;
+}
+
+.cta-button a {
+  text-decoration: none;
+  color: #e7f6fd;
+  font-weight: 600;
 }
