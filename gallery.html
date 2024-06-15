@@ -3,30 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <title>CSS Final Exercise 🚀</title>
   </head>
-  <body>
+  <body class="gallery">
     <header>
       <nav>
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./specs.html">Specs</a></li>
-          <li><a href="./index.html">💻</a></li>
+          <span>
+            <li>
+              <a href="./index.html"
+                ><span class="short">Home</span>
+                <span class="emoji">🏚️</span></a
+              >
+            </li>
+            <li>
+              <a href="./gallery.html"
+                ><span class="short">Gallery</span
+                ><span class="emoji">📷</span></a
+              >
+            </li>
+            <li>
+              <a href="./specs.html"
+                ><span class="short">Specs</span
+                ><span class="emoji">📋</span></a
+              >
+            </li>
+          </span>
+          <span class="short">
+            <li>
+              <a href="./index.html">💻</a>
+            </li>
+          </span>
         </ul>
       </nav>
-      <h1>Image Gallery</h1>
+      <h1>WBL: Product Gallery</h1>
     </header>
     <main>
-      <img src="images/laptop1.jpg" alt="image of laptop" />
-      <img src="images/laptop2.jpg" alt="image of laptop" />
-      <img src="images/laptop3.jpg" alt="image of laptop" />
-      <img src="images/laptop4.jpg" alt="image of laptop" />
-      <img src="images/laptop5.jpg" alt="image of laptop" />
-      <img src="images/laptop6.jpg" alt="image of laptop" />
-      <img src="images/laptop7.jpg" alt="image of laptop" />
-      <img src="images/laptop8.jpg" alt="image of laptop" />
-      <img src="images/laptop9.jpg" alt="image of laptop" />
+      <form class="carousel">
+        <input type="radio" name="fancy" id="s1" autofocus />
+        <input type="radio" name="fancy" id="s2" />
+        <input type="radio" name="fancy" id="s3" />
+        <input type="radio" name="fancy" id="s4" />
+        <input type="radio" name="fancy" id="s5" />
+        <input type="radio" name="fancy" id="s6" />
+        <input type="radio" name="fancy" id="s7" />
+        <input type="radio" name="fancy" id="s8" />
+        <input type="radio" name="fancy" id="s9" />
+        <!-- Labels have to be written inline without spaces
+        between them to support carousel/form layout.
+        Try to break closing </label> tag with
+        opening <label> tag from the next label
+        and see the difference in layout during sliding. -->
+        <label for="s1"><img src="./images/laptop1.jpg" alt="" /></label
+        ><label for="s2"><img src="./images/laptop2.jpg" alt="" /></label
+        ><label for="s3"><img src="./images/laptop3.jpg" alt="" /></label
+        ><label for="s4"><img src="./images/laptop4.jpg" alt="" /></label
+        ><label for="s5"><img src="./images/laptop5.jpg" alt="" /></label
+        ><label for="s6"><img src="./images/laptop6.jpg" alt="" /></label
+        ><label for="s7"><img src="./images/laptop7.jpg" alt="" /></label
+        ><label for="s8"><img src="./images/laptop8.jpg" alt="" /></label
+        ><label for="s9"><img src="./images/laptop9.jpg" alt="" /></label>
+        <div class="keys">Use ◄— and —► keys to navigate</div>
+      </form>
     </main>
     <footer>
       <ul>
